@@ -34,4 +34,5 @@ words = sorted(set(words))
 
 classes = sorted(set(classes))
 
-print(words)
+pickle.dump(words, open('words.pkl', 'wb'))
+pickle.dump(words, open('classes.pkl', 'wb'))
